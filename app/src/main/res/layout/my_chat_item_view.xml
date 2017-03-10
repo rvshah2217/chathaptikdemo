@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mLinearLayoutRowInfoRoot1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginEnd="@dimen/dimen_5dp"
+    android:layout_marginRight="@dimen/dimen_5dp"
+    android:gravity="end"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_5dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/addToFavouriteImg"
+        android:layout_width="@dimen/dimen_35dp"
+        android:layout_height="@dimen/dimen_35dp"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/fav_empty" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_curve"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_5dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTxtMyName"
+            style="@style/bodyTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/color_ffffff"
+
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:text="@string/chat_my_name"
+            android:textColor="@color/color_8a000000"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mTxtChatMsg"
+                style="@style/bodyTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:maxLines="3"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:maxWidth="150dp"
+                android:paddingEnd="@dimen/dimen_5dp"
+                android:paddingRight="@dimen/dimen_5dp"
+                android:text="@string/chat_message"
+                android:textSize="@dimen/dimen_12sp"
+
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/myTimeStamp"
+                style="@style/bodyTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_toRightOf="@+id/mTxtChatMsg"
+                android:layout_below="@+id/mTxtChatMsg"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:text="@string/time" >
+
+            </android.support.v7.widget.AppCompatTextView>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

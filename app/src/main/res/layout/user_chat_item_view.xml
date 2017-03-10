@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mLinearLayoutRowInfoRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginRight="50dp"
+    android:gravity="start"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_curve"
+
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_5dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTxtUserName"
+            style="@style/bodyTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@color/color_ffffff"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:text="@string/user_name"
+            android:textColor="@color/color_8a000000"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mTxtUserChatMsg"
+                style="@style/bodyTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:maxWidth="150dp"
+                android:background="@color/color_ffffff"
+                android:maxLines="3"
+                android:text="@string/chat_message"
+                android:textSize="@dimen/dimen_12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/name"
+                style="@style/bodyTextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mTxtUserChatMsg"
+                android:layout_toRightOf="@+id/mTxtUserChatMsg"
+                android:gravity="end"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:text="@string/time">
+
+            </android.support.v7.widget.AppCompatTextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/addToFavouriteImg"
+        android:layout_width="@dimen/dimen_35dp"
+        android:layout_height="@dimen/dimen_35dp"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/fav_empty" />
+
+</LinearLayout>
+
